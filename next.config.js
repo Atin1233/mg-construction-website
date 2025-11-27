@@ -11,7 +11,7 @@ module.exports = withBundleAnalyzer({
     ignoreBuildErrors: false,
   },
   poweredByHeader: false,
-  trailingSlash: true,
+  trailingSlash: false,
   basePath: '',
   reactStrictMode: true,
 });
