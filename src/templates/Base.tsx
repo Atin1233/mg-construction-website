@@ -17,7 +17,7 @@ const Base = (props: IBaseTemplateProps) => (
       <p>
         Demo website by{' '}
         <a
-          href="https://linyrdigital.com"
+          href="https://linyr.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold underline transition-opacity hover:opacity-80"
