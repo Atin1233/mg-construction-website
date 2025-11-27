@@ -15,15 +15,18 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
         <div>
           <div className="mb-4">{props.logo}</div>
           <p className="mb-4 text-sm">
-            Professional concrete and foundation construction services in New Jersey since 1991.
+            Professional concrete and foundation construction services in New
+            Jersey since 1991.
           </p>
           <div className="text-sm">
             <p className="mb-1">
               <strong>Address:</strong>
             </p>
             <p className="mb-4">
-              {AppConfig.company.address}<br />
-              {AppConfig.company.city}, {AppConfig.company.state} {AppConfig.company.zip}
+              {AppConfig.company.address}
+              <br />
+              {AppConfig.company.city}, {AppConfig.company.state}{' '}
+              {AppConfig.company.zip}
             </p>
           </div>
         </div>
@@ -32,9 +35,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
         <div>
           <h3 className="mb-4 text-lg font-bold text-white">Quick Links</h3>
           <nav>
-            <ul className="space-y-2 text-sm">
-              {props.children}
-            </ul>
+            <ul className="space-y-2 text-sm">{props.children}</ul>
           </nav>
         </div>
 
@@ -46,7 +47,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
               <strong>Phone:</strong>{' '}
               <a
                 href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-                className="text-primary-400 hover:text-primary-300 transition-colors"
+                className="text-primary-400 transition-colors hover:text-primary-300"
               >
                 {AppConfig.company.phone}
               </a>
@@ -55,7 +56,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
               <strong>Alt. Phone:</strong>{' '}
               <a
                 href={`tel:${AppConfig.company.altPhone.replace(/[^0-9]/g, '')}`}
-                className="text-primary-400 hover:text-primary-300 transition-colors"
+                className="text-primary-400 transition-colors hover:text-primary-300"
               >
                 {AppConfig.company.altPhone}
               </a>
@@ -65,7 +66,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
                 href={AppConfig.company.bluebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-400 hover:text-primary-300 transition-colors underline"
+                className="text-primary-400 underline transition-colors hover:text-primary-300"
               >
                 View on BlueBook →
               </a>
@@ -77,7 +78,8 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
       {/* Copyright */}
       <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm">
         <p>
-          © {new Date().getFullYear()} {AppConfig.company.name}. All rights reserved.
+          © {new Date().getFullYear()} {AppConfig.company.name}. All rights
+          reserved.
         </p>
       </div>
     </div>
@@ -85,4 +87,3 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
 );
 
 export { ConstructionFooter };
-

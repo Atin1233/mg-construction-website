@@ -24,31 +24,25 @@ const services: ServiceItem[] = [
   },
   {
     title: 'Foundation Work',
-    items: [
-      'Concrete foundations',
-      'Block foundations',
-    ],
+    items: ['Concrete foundations', 'Block foundations'],
   },
 ];
 
 const ServicesSection = (props: IServicesSectionProps) => (
-  <Section
-    title={props.title}
-    yPadding="py-16"
-  >
+  <Section title={props.title} yPadding="py-16">
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
       {services.map((service, index) => (
         <div
           key={index}
           className="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-shadow hover:shadow-lg"
         >
-          <h3 className="mb-4 text-2xl font-bold text-gray-900 border-b-2 border-primary-500 pb-2">
+          <h3 className="mb-4 border-b-2 border-primary-500 pb-2 text-2xl font-bold text-gray-900">
             {service.title}
           </h3>
           <ul className="space-y-2">
             {service.items.map((item, itemIndex) => (
               <li key={itemIndex} className="flex items-start text-gray-700">
-                <span className="text-primary-500 mr-2 mt-1">•</span>
+                <span className="mr-2 mt-1 text-primary-500">•</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -60,4 +54,3 @@ const ServicesSection = (props: IServicesSectionProps) => (
 );
 
 export { ServicesSection };
-

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
-import { AppConfig } from '../utils/AppConfig';
 import { ConstructionFooter } from '../footer/ConstructionFooter';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { AppConfig } from '../utils/AppConfig';
 
 type IBaseTemplateProps = {
   children: ReactNode;
@@ -11,10 +11,10 @@ type IBaseTemplateProps = {
 };
 
 const Base = (props: IBaseTemplateProps) => (
-  <div className="antialiased text-gray-600">
+  <div className="text-gray-600 antialiased">
     {/* Navigation */}
     <div className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="mx-auto max-w-screen-xl px-3 py-3">
+      <div className="mx-auto max-w-screen-xl p-3">
         <NavbarTwoColumns
           logo={
             <div className="flex items-center">
@@ -68,27 +68,36 @@ const Base = (props: IBaseTemplateProps) => (
         }
       >
         <li>
-          <Link href="/" className="hover:text-primary-400 transition-colors">
+          <Link href="/" className="transition-colors hover:text-primary-400">
             Home
           </Link>
         </li>
         <li>
-          <a href="#about" className="hover:text-primary-400 transition-colors">
+          <a href="#about" className="transition-colors hover:text-primary-400">
             About Us
           </a>
         </li>
         <li>
-          <a href="#services" className="hover:text-primary-400 transition-colors">
+          <a
+            href="#services"
+            className="transition-colors hover:text-primary-400"
+          >
             Services
           </a>
         </li>
         <li>
-          <a href="#experience" className="hover:text-primary-400 transition-colors">
+          <a
+            href="#experience"
+            className="transition-colors hover:text-primary-400"
+          >
             Experience
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-primary-400 transition-colors">
+          <a
+            href="#contact"
+            className="transition-colors hover:text-primary-400"
+          >
             Contact
           </a>
         </li>
@@ -98,4 +107,3 @@ const Base = (props: IBaseTemplateProps) => (
 );
 
 export { Base };
-

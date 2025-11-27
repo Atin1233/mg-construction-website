@@ -9,7 +9,9 @@ type INavbarProps = {
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="flex flex-wrap items-center justify-between bg-white shadow-md">
     <div className="px-4 py-3">
-      <Link href="/" className="hover:opacity-80 transition-opacity">{props.logo}</Link>
+      <Link href="/" className="transition-opacity hover:opacity-80">
+        {props.logo}
+      </Link>
     </div>
 
     <nav className="px-4">

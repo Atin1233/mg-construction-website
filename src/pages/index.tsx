@@ -1,15 +1,14 @@
-
-import { Meta } from '../layout/Meta';
-import { Base } from '../templates/Base';
-import { AppConfig } from '../utils/AppConfig';
+import { Button } from '../button/Button';
+import { CTABanner } from '../cta/CTABanner';
 import { ConstructionHero } from '../hero/ConstructionHero';
+import { Meta } from '../layout/Meta';
+import { Section } from '../layout/Section';
 import { AboutSection } from '../sections/AboutSection';
-import { ServicesSection } from '../sections/ServicesSection';
 import { ProjectExperienceSection } from '../sections/ProjectExperienceSection';
 import { ServiceAreasSection } from '../sections/ServiceAreasSection';
-import { CTABanner } from '../cta/CTABanner';
-import { Button } from '../button/Button';
-import { Section } from '../layout/Section';
+import { ServicesSection } from '../sections/ServicesSection';
+import { Base } from '../templates/Base';
+import { AppConfig } from '../utils/AppConfig';
 
 const Index = () => (
   <>
@@ -25,7 +24,9 @@ const Index = () => (
           <>
             M.G. Construction Co.
             <br />
-            <span className="text-primary-400">Concrete & Foundation Experts</span>
+            <span className="text-primary-400">
+              Concrete & Foundation Experts
+            </span>
           </>
         }
         description="Serving New Jersey & Surrounding Areas Since 1991"
@@ -68,26 +69,34 @@ const Index = () => (
       {/* Contact Info Section */}
       <Section yPadding="py-16">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-lg bg-white border-2 border-gray-200 p-8 shadow-md">
+          <div className="rounded-lg border-2 border-gray-200 bg-white p-8 shadow-md">
             <h2 className="mb-6 text-center text-3xl font-bold text-gray-900">
               Get In Touch
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="text-center">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Phone</h3>
+                <h3 className="mb-3 text-xl font-semibold text-gray-900">
+                  Phone
+                </h3>
                 <a
                   href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-                  className="text-lg text-primary-600 hover:text-primary-700 font-semibold"
+                  className="text-lg font-semibold text-primary-600 hover:text-primary-700"
                 >
                   {AppConfig.company.phone}
                 </a>
-                <p className="mt-2 text-sm text-gray-600">Alt: {AppConfig.company.altPhone}</p>
+                <p className="mt-2 text-sm text-gray-600">
+                  Alt: {AppConfig.company.altPhone}
+                </p>
               </div>
               <div className="text-center">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Address</h3>
+                <h3 className="mb-3 text-xl font-semibold text-gray-900">
+                  Address
+                </h3>
                 <p className="text-gray-700">
-                  {AppConfig.company.address}<br />
-                  {AppConfig.company.city}, {AppConfig.company.state} {AppConfig.company.zip}
+                  {AppConfig.company.address}
+                  <br />
+                  {AppConfig.company.city}, {AppConfig.company.state}{' '}
+                  {AppConfig.company.zip}
                 </p>
               </div>
             </div>
@@ -96,7 +105,7 @@ const Index = () => (
                 href={AppConfig.company.bluebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-600 hover:text-primary-700 underline font-semibold"
+                className="font-semibold text-primary-600 underline hover:text-primary-700"
               >
                 View our BlueBook Profile →
               </a>
@@ -109,4 +118,3 @@ const Index = () => (
 );
 
 export default Index;
-
