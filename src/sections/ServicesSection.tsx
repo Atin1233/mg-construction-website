@@ -1,5 +1,3 @@
-import type { ReactNode } from 'react';
-
 import { Section } from '../layout/Section';
 
 type IServicesSectionProps = {
