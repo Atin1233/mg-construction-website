@@ -22,7 +22,7 @@ const Base = (props: IBaseTemplateProps) => (
           rel="noopener noreferrer"
           className="font-semibold underline transition-opacity hover:opacity-80"
         >
-          Linyr Digital web design agency
+          Linyr Digital Web Design Agency
         </a>
       </p>
     </div>

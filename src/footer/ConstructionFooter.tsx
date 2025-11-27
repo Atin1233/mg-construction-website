@@ -93,7 +93,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
             rel="noopener noreferrer"
             className="text-primary-400 transition-colors hover:text-primary-300"
           >
-            Linyr Digital web design agency
+            Linyr Digital Web Design Agency
           </a>
         </p>
       </div>
