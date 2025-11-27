@@ -56,11 +56,13 @@ export default function Hero({ title, subtitle, primaryCta, secondaryCta }: Hero
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
             <span className="block text-white drop-shadow-lg">
-              Concrete & Foundation Specialists
+              {title.includes('Since') ? title.split('Since')[0].trim() : title}
             </span>
-            <span className="block bg-gradient-to-r from-accent via-accent-400 to-accent bg-clip-text text-transparent">
-              Since 1991
-            </span>
+            {title.includes('Since') && (
+              <span className="block bg-gradient-to-r from-accent via-accent-400 to-accent bg-clip-text text-transparent">
+                Since {title.split('Since')[1].trim()}
+              </span>
+            )}
           </motion.h1>
           
           {/* Subtitle */}
