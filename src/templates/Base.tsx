@@ -13,8 +13,8 @@ type IBaseTemplateProps = {
 const Base = (props: IBaseTemplateProps) => (
   <div className="text-gray-600 antialiased">
     {/* Navigation */}
-    <div className="sticky top-0 z-50 bg-white shadow-lg">
-      <div className="mx-auto max-w-screen-xl">
+    <div className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="mx-auto max-w-screen-xl p-3">
         <NavbarTwoColumns
           logo={
             <div className="flex items-center">
@@ -23,36 +23,28 @@ const Base = (props: IBaseTemplateProps) => (
               </span>
             </div>
           }
-          ctaButton={
-            <a
-              href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-              className="rounded-md bg-primary-600 px-6 py-2 text-sm font-semibold text-white shadow-md transition-all hover:bg-primary-700 hover:shadow-lg lg:px-8 lg:py-3 lg:text-base"
-            >
-              Get A Quote
-            </a>
-          }
         >
-          <li className="px-3 md:px-4 lg:px-6">
+          <li>
             <Link href="/" className="hover:text-primary-600">
               Home
             </Link>
           </li>
-          <li className="px-3 md:px-4 lg:px-6">
+          <li>
             <a href="#about" className="hover:text-primary-600">
               About Us
             </a>
           </li>
-          <li className="px-3 md:px-4 lg:px-6">
+          <li>
             <a href="#services" className="hover:text-primary-600">
               Services
             </a>
           </li>
-          <li className="px-3 md:px-4 lg:px-6">
+          <li>
             <a href="#experience" className="hover:text-primary-600">
               Experience
             </a>
           </li>
-          <li className="px-3 md:px-4 lg:px-6">
+          <li>
             <a href="#contact" className="hover:text-primary-600">
               Contact
             </a>
