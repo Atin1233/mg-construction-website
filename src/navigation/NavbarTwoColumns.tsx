@@ -8,26 +8,22 @@ type INavbarProps = {
 
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="flex flex-wrap items-center justify-between bg-white shadow-md">
-    <div className="px-4 py-3">
+    <div className="px-6 py-3">
       <Link href="/" className="transition-opacity hover:opacity-80">
         {props.logo}
       </Link>
     </div>
 
-    <nav className="px-4">
-      <ul className="navbar flex items-center text-lg font-medium text-gray-800">
+    <nav className="flex-1 px-6">
+      <ul className="navbar flex items-center justify-end gap-6 text-lg font-medium text-gray-800 sm:gap-8 lg:gap-10">
         {props.children}
       </ul>
     </nav>
 
     <style jsx>
       {`
-        .navbar :global(li:not(:first-child)) {
+        .navbar :global(li) {
           @apply mt-0;
-        }
-
-        .navbar :global(li:not(:last-child)) {
-          @apply mr-5;
         }
 
         .navbar :global(a:hover) {
