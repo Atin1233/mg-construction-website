@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { GALLERY_CATEGORIES } from '@/lib/constants';
 import { AnimatedSection } from '@/components/section';
 import { motion } from 'framer-motion';

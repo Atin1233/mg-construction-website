@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { COMPANY_INFO, ABOUT_CONTENT, PROJECT_EXPERIENCE } from '@/lib/constants';
 import { AnimatedSection } from '@/components/section';
 
