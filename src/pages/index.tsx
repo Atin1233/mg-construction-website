@@ -4,9 +4,12 @@ import { ConstructionHero } from '../hero/ConstructionHero';
 import { Meta } from '../layout/Meta';
 import { Section } from '../layout/Section';
 import { AboutSection } from '../sections/AboutSection';
+import { FeaturedServicesSection } from '../sections/FeaturedServicesSection';
 import { ProjectExperienceSection } from '../sections/ProjectExperienceSection';
+import { ProjectGallerySection } from '../sections/ProjectGallerySection';
 import { ServiceAreasSection } from '../sections/ServiceAreasSection';
 import { ServicesSection } from '../sections/ServicesSection';
+import { StatsSection } from '../sections/StatsSection';
 import { TestimonialsSection } from '../sections/TestimonialsSection';
 import { Base } from '../templates/Base';
 import { AppConfig } from '../utils/AppConfig';
@@ -34,6 +37,16 @@ const Index = () => (
         phone={AppConfig.company.phone}
       />
 
+      {/* Featured Services Cards */}
+      <Section yPadding="py-16">
+        <FeaturedServicesSection />
+      </Section>
+
+      {/* Stats Section */}
+      <div className="bg-gray-50">
+        <StatsSection />
+      </div>
+
       {/* About Section */}
       <div id="about">
         <AboutSection title="About Us | Our Story" />
@@ -42,6 +55,11 @@ const Index = () => (
       {/* Services Section */}
       <div id="services" className="bg-gray-50">
         <ServicesSection title="Our Services" />
+      </div>
+
+      {/* Project Gallery */}
+      <div id="gallery">
+        <ProjectGallerySection />
       </div>
 
       {/* Project Experience Section */}
