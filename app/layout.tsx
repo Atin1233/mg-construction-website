@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { COMPANY_INFO } from '@/lib/constants';
 import Navbar from '@/components/navbar';
@@ -81,11 +82,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <script
+      <head>
+        <Script
+          id="json-ld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </head>
+      <body className={inter.className}>
         <Navbar />
         <main className="min-h-screen">
           {children}
