@@ -33,47 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: COMPANY_INFO.name,
-  image: 'https://mgconstruction.com/og-image.jpg',
-  '@id': 'https://mgconstruction.com',
-  url: 'https://mgconstruction.com',
-  telephone: COMPANY_INFO.phone,
-  priceRange: '$$',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: COMPANY_INFO.address,
-    addressLocality: COMPANY_INFO.city,
-    addressRegion: COMPANY_INFO.state,
-    postalCode: COMPANY_INFO.zip,
-    addressCountry: 'US',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 40.4, // Approximate coordinates for Old Bridge, NJ
-    longitude: -74.3,
-  },
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-    ],
-    opens: '07:00',
-    closes: '17:00',
-  },
-  foundingDate: COMPANY_INFO.founded.toString(),
-  areaServed: {
-    '@type': 'State',
-    name: 'New Jersey',
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
