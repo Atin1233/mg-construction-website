@@ -9,16 +9,16 @@ type IConstructionFooterProps = {
 
 const ConstructionFooter = (props: IConstructionFooterProps) => (
   <footer className="bg-gray-900 text-gray-300">
-    <div className="mx-auto max-w-screen-xl px-3 py-12">
-      <div className="grid gap-8 md:grid-cols-3">
+    <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-10 md:py-12">
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {/* Company Info */}
-        <div>
+        <div className="sm:col-span-2 md:col-span-1">
           <div className="mb-4">{props.logo}</div>
-          <p className="mb-4 text-sm">
+          <p className="mb-4 text-xs sm:text-sm">
             Professional concrete and foundation construction services in New
             Jersey since 1991.
           </p>
-          <div className="text-sm">
+          <div className="text-xs sm:text-sm">
             <p className="mb-1">
               <strong>Address:</strong>
             </p>
@@ -33,16 +33,20 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
 
         {/* Quick Links */}
         <div>
-          <h3 className="mb-4 text-lg font-bold text-white">Quick Links</h3>
+          <h3 className="mb-4 text-base font-bold text-white sm:text-lg">
+            Quick Links
+          </h3>
           <nav>
-            <ul className="space-y-2 text-sm">{props.children}</ul>
+            <ul className="space-y-2 text-xs sm:text-sm">{props.children}</ul>
           </nav>
         </div>
 
         {/* Contact Info */}
         <div>
-          <h3 className="mb-4 text-lg font-bold text-white">Contact Us</h3>
-          <div className="space-y-3 text-sm">
+          <h3 className="mb-4 text-base font-bold text-white sm:text-lg">
+            Contact Us
+          </h3>
+          <div className="space-y-2 text-xs sm:space-y-3 sm:text-sm">
             <p>
               <strong>Phone:</strong>{' '}
               <a
@@ -61,7 +65,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
                 {AppConfig.company.altPhone}
               </a>
             </p>
-            <p className="mt-4">
+            <p className="mt-3 sm:mt-4">
               <a
                 href={AppConfig.company.bluebook}
                 target="_blank"
@@ -76,7 +80,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
       </div>
 
       {/* Copyright */}
-      <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm">
+      <div className="mt-6 border-t border-gray-800 pt-6 text-center text-xs sm:mt-8 sm:pt-8 sm:text-sm">
         <p>
           © {new Date().getFullYear()} {AppConfig.company.name}. All rights
           reserved.

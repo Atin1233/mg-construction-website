@@ -18,7 +18,7 @@ const Base = (props: IBaseTemplateProps) => (
         <NavbarTwoColumns
           logo={
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-gray-900">
+              <span className="text-lg font-bold text-gray-900 sm:text-xl md:text-2xl">
                 {AppConfig.site_name}
               </span>
             </div>

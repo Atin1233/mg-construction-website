@@ -5,7 +5,7 @@ type IProjectExperienceSectionProps = {
 };
 
 const ProjectExperienceSection = (props: IProjectExperienceSectionProps) => (
-  <div className="relative">
+  <div className="relative min-h-[400px] sm:min-h-[500px]">
     <div
       className="absolute inset-0 bg-cover bg-center"
       style={{
@@ -13,12 +13,14 @@ const ProjectExperienceSection = (props: IProjectExperienceSectionProps) => (
       }}
     />
     <div className="absolute inset-0 bg-gray-900/75" />
-    <Section title={props.title} yPadding="py-20">
+    <Section title={props.title} yPadding="py-12 sm:py-16 md:py-20">
       <div className="relative mx-auto max-w-4xl text-white">
-        <div className="mb-4 inline-block border-l-4 border-primary-500 pl-4">
-          <h3 className="text-2xl font-bold">Commercial Construction</h3>
+        <div className="mb-4 inline-block border-l-4 border-primary-500 pl-3 sm:pl-4">
+          <h3 className="text-xl font-bold sm:text-2xl">
+            Commercial Construction
+          </h3>
         </div>
-        <div className="space-y-6 text-lg leading-relaxed">
+        <div className="space-y-4 text-base leading-relaxed sm:space-y-6 sm:text-lg">
           <p>
             With decades of experience, M.G. Construction Co. has established
             itself as a trusted partner in delivering exceptional concrete and

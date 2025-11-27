@@ -65,41 +65,43 @@ const Index = () => (
       />
 
       {/* Contact Info Section */}
-      <Section yPadding="py-20">
+      <Section yPadding="py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="mb-12 text-center text-4xl font-bold text-gray-900">
+          <h2 className="mb-8 text-center text-3xl font-bold text-gray-900 sm:mb-10 sm:text-4xl">
             Get In Touch
           </h2>
-          <div className="grid gap-12 md:grid-cols-2">
+          <div className="grid gap-8 sm:gap-10 md:grid-cols-2 md:gap-12">
             <div>
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">
+              <h3 className="mb-3 text-lg font-semibold text-gray-900 sm:mb-4 sm:text-xl">
                 Phone
               </h3>
               <p className="mb-2">
                 <a
                   href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-                  className="text-2xl font-semibold text-primary-600 transition-colors hover:text-primary-700"
+                  className="text-xl font-semibold text-primary-600 transition-colors hover:text-primary-700 sm:text-2xl"
                 >
                   {AppConfig.company.phone}
                 </a>
               </p>
-              <p className="text-gray-600">Alt: {AppConfig.company.altPhone}</p>
+              <p className="text-sm text-gray-600 sm:text-base">
+                Alt: {AppConfig.company.altPhone}
+              </p>
             </div>
             <div>
-              <h3 className="mb-4 text-xl font-semibold text-gray-900">
+              <h3 className="mb-3 text-lg font-semibold text-gray-900 sm:mb-4 sm:text-xl">
                 Address
               </h3>
-              <p className="text-lg leading-relaxed text-gray-700">
+              <p className="text-base leading-relaxed text-gray-700 sm:text-lg">
                 {AppConfig.company.address}
               </p>
             </div>
           </div>
-          <div className="mt-12 border-t border-gray-300 pt-8 text-center">
+          <div className="mt-8 border-t border-gray-300 pt-6 text-center sm:mt-10 sm:pt-8">
             <a
               href={AppConfig.company.bluebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold text-primary-600 transition-colors hover:text-primary-700"
+              className="text-base font-semibold text-primary-600 transition-colors hover:text-primary-700 sm:text-lg"
             >
               View our BlueBook Profile
             </a>

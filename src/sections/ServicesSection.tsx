@@ -33,25 +33,27 @@ const services: ServiceItem[] = [
 
 const ServicesSection = (props: IServicesSectionProps) => (
   <div className="bg-gray-50">
-    <Section title={props.title} yPadding="py-20">
+    <Section title={props.title} yPadding="py-12 sm:py-16 md:py-20">
       <div className="grid gap-0 md:grid-cols-2">
         {services.map((service, index) => (
           <div key={index} className="relative">
             {/* Background Image with Overlay */}
             <div
-              className="h-[500px] bg-cover bg-center"
+              className="h-[400px] bg-cover bg-center sm:h-[450px] md:h-[500px]"
               style={{
                 backgroundImage: `url('${service.image}')`,
               }}
             >
               <div className="absolute inset-0 bg-gray-900/60" />
-              <div className="absolute inset-0 flex flex-col justify-end p-8 text-white sm:p-12">
-                <h3 className="mb-6 text-3xl font-bold">{service.title}</h3>
-                <ul className="space-y-3 text-lg">
+              <div className="absolute inset-0 flex flex-col justify-end p-6 text-white sm:p-8 md:p-12">
+                <h3 className="mb-4 text-2xl font-bold sm:mb-6 sm:text-3xl">
+                  {service.title}
+                </h3>
+                <ul className="space-y-2 text-base sm:space-y-3 sm:text-lg">
                   {service.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className={`border-l-4 pl-4 ${
+                      className={`border-l-4 pl-3 sm:pl-4 ${
                         index % 2 === 0
                           ? 'border-primary-400'
                           : 'border-accent-400'
