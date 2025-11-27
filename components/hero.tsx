@@ -55,13 +55,17 @@ export default function Hero({ title, subtitle, primaryCta, secondaryCta }: Hero
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            <span className="block text-white drop-shadow-lg">
-              {title.includes('Since') ? title.split('Since')[0].trim() : title}
-            </span>
-            {title.includes('Since') && (
-              <span className="block bg-gradient-to-r from-accent via-accent-400 to-accent bg-clip-text text-transparent">
-                Since {title.split('Since')[1].trim()}
-              </span>
+            {title.includes('Since') ? (
+              <>
+                <span className="block text-white drop-shadow-lg">
+                  {title.split('Since')[0]?.trim() || title}
+                </span>
+                <span className="block bg-gradient-to-r from-accent via-accent-400 to-accent bg-clip-text text-transparent">
+                  Since {title.split('Since')[1]?.trim() || '1991'}
+                </span>
+              </>
+            ) : (
+              <span className="block text-white drop-shadow-lg">{title}</span>
             )}
           </motion.h1>
           
