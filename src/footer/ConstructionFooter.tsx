@@ -85,6 +85,17 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
           © {new Date().getFullYear()} {AppConfig.company.name}. All rights
           reserved.
         </p>
+        <p className="mt-2 text-gray-500">
+          Built by{' '}
+          <a
+            href="https://linyrdigital.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-400 transition-colors hover:text-primary-300"
+          >
+            Linyr Digital web design agency
+          </a>
+        </p>
       </div>
     </div>
   </footer>

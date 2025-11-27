@@ -12,6 +12,21 @@ type IBaseTemplateProps = {
 
 const Base = (props: IBaseTemplateProps) => (
   <div className="text-gray-600 antialiased">
+    {/* Demo Banner */}
+    <div className="bg-primary-500 py-2 text-center text-xs text-white sm:text-sm">
+      <p>
+        Demo website by{' '}
+        <a
+          href="https://linyrdigital.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold underline transition-opacity hover:opacity-80"
+        >
+          Linyr Digital web design agency
+        </a>
+      </p>
+    </div>
+
     {/* Navigation */}
     <div className="sticky top-0 z-50 bg-white shadow-md">
       <div className="mx-auto max-w-screen-xl p-3">
