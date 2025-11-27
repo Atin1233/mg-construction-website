@@ -24,7 +24,9 @@ const Index = () => (
           <>
             M.G. Construction Co.
             <br />
-            <span className="text-gray-300">Concrete & Foundation Experts</span>
+            <span className="text-primary-400">
+              Concrete & Foundation Experts
+            </span>
           </>
         }
         description="Serving New Jersey & Surrounding Areas Since 1991"
@@ -76,7 +78,7 @@ const Index = () => (
               <p className="mb-2">
                 <a
                   href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-                  className="text-2xl font-semibold text-gray-900 hover:text-gray-700"
+                  className="text-2xl font-semibold text-primary-600 transition-colors hover:text-primary-700"
                 >
                   {AppConfig.company.phone}
                 </a>
@@ -97,7 +99,7 @@ const Index = () => (
               href={AppConfig.company.bluebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold text-gray-900 hover:text-gray-700"
+              className="text-lg font-semibold text-primary-600 transition-colors hover:text-primary-700"
             >
               View our BlueBook Profile
             </a>

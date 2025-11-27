@@ -47,7 +47,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
               <strong>Phone:</strong>{' '}
               <a
                 href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}
-                className="text-white transition-colors hover:text-gray-300"
+                className="text-primary-400 transition-colors hover:text-primary-300"
               >
                 {AppConfig.company.phone}
               </a>
@@ -56,7 +56,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
               <strong>Alt. Phone:</strong>{' '}
               <a
                 href={`tel:${AppConfig.company.altPhone.replace(/[^0-9]/g, '')}`}
-                className="text-white transition-colors hover:text-gray-300"
+                className="text-primary-400 transition-colors hover:text-primary-300"
               >
                 {AppConfig.company.altPhone}
               </a>
@@ -66,7 +66,7 @@ const ConstructionFooter = (props: IConstructionFooterProps) => (
                 href={AppConfig.company.bluebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white underline transition-colors hover:text-gray-300"
+                className="text-primary-400 underline transition-colors hover:text-primary-300"
               >
                 View on BlueBook →
               </a>

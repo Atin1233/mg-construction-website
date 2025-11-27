@@ -8,7 +8,7 @@ const Button = (props: IButtonProps) => {
 
   return (
     <span
-      className={`inline-block bg-white font-semibold text-gray-900 transition-colors hover:bg-gray-100 ${className}`}
+      className={`inline-block bg-primary-500 font-semibold text-white shadow-md transition-all hover:bg-primary-600 hover:shadow-lg ${className}`}
     >
       {props.children}
     </span>

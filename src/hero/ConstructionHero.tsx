@@ -17,8 +17,8 @@ const ConstructionHero = (props: IConstructionHeroProps) => (
     />
     {/* Dark overlay for text readability */}
     <div className="absolute inset-0 bg-gray-900/70" />
-    {/* Subtle texture overlay */}
-    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/80" />
+    {/* Subtle texture overlay with accent */}
+    <div className="absolute inset-0 bg-gradient-to-b from-primary-900/20 via-gray-900/60 to-gray-900/80" />
 
     <div className="relative mx-auto flex h-full max-w-screen-xl items-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl">
@@ -32,7 +32,7 @@ const ConstructionHero = (props: IConstructionHeroProps) => (
           <div>
             <a
               href={`tel:${props.phone.replace(/[^0-9]/g, '')}`}
-              className="inline-block bg-white px-8 py-4 text-lg font-semibold text-gray-900 transition-colors hover:bg-gray-100"
+              className="inline-block bg-primary-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:bg-primary-600 hover:shadow-xl"
             >
               Call {props.phone}
             </a>

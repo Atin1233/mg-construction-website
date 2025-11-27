@@ -11,19 +11,20 @@ const ServiceAreasSection = (props: IServiceAreasSectionProps) => (
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-900">Service Areas</h3>
-            <div className="space-y-4 text-lg text-gray-700">
-              <div>
-                <p className="font-semibold text-gray-900">
+            <div className="space-y-6 text-lg text-gray-700">
+              <div className="border-l-4 border-primary-500 pl-5">
+                <p className="font-semibold text-primary-600">
                   Primary Service Area
                 </p>
-                <p className="mt-1">New Jersey</p>
+                <p className="mt-1 text-gray-700">New Jersey</p>
               </div>
-              <div>
-                <p className="font-semibold text-gray-900">
+              <div className="border-l-4 border-accent-500 pl-5">
+                <p className="font-semibold text-accent-600">
                   Local Service Radius
                 </p>
-                <p className="mt-1">
-                  Serving areas around <strong>Old Bridge, NJ</strong>
+                <p className="mt-1 text-gray-700">
+                  Serving areas around{' '}
+                  <strong className="text-gray-900">Old Bridge, NJ</strong>
                 </p>
               </div>
             </div>

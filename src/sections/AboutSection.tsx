@@ -31,24 +31,24 @@ const AboutSection = (props: IAboutSectionProps) => (
                 Our Core Values
               </h3>
               <dl className="space-y-5">
-                <div>
-                  <dt className="mb-2 text-lg font-semibold text-gray-900">
+                <div className="border-l-4 border-primary-500 pl-5">
+                  <dt className="mb-2 text-lg font-semibold text-primary-600">
                     Reliability
                   </dt>
                   <dd className="text-gray-700">
                     Dependable service you can count on, every time
                   </dd>
                 </div>
-                <div>
-                  <dt className="mb-2 text-lg font-semibold text-gray-900">
+                <div className="border-l-4 border-accent-500 pl-5">
+                  <dt className="mb-2 text-lg font-semibold text-accent-600">
                     Craftsmanship
                   </dt>
                   <dd className="text-gray-700">
                     Attention to detail in every project we undertake
                   </dd>
                 </div>
-                <div>
-                  <dt className="mb-2 text-lg font-semibold text-gray-900">
+                <div className="border-l-4 border-primary-500 pl-5">
+                  <dt className="mb-2 text-lg font-semibold text-primary-600">
                     Integrity
                   </dt>
                   <dd className="text-gray-700">

@@ -15,7 +15,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </div>
 
     <nav className="flex-1 px-6">
-      <ul className="navbar flex items-center justify-end gap-6 text-base font-medium text-gray-700 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
+      <ul className="navbar flex items-center justify-end gap-8 text-base font-medium text-gray-700 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20">
         {props.children}
       </ul>
     </nav>
@@ -31,7 +31,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
         }
 
         .navbar :global(a:hover) {
-          @apply text-gray-900 transition-colors;
+          @apply text-primary-600 transition-colors;
         }
       `}
     </style>

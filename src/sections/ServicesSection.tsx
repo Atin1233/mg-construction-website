@@ -51,7 +51,11 @@ const ServicesSection = (props: IServicesSectionProps) => (
                   {service.items.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className="border-l-4 border-white pl-4"
+                      className={`border-l-4 pl-4 ${
+                        index % 2 === 0
+                          ? 'border-primary-400'
+                          : 'border-accent-400'
+                      }`}
                     >
                       {item}
                     </li>

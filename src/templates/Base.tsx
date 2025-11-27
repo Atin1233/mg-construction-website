@@ -25,27 +25,42 @@ const Base = (props: IBaseTemplateProps) => (
           }
         >
           <li>
-            <Link href="/" className="text-gray-700 hover:text-gray-900">
+            <Link
+              href="/"
+              className="text-gray-700 transition-colors hover:text-primary-600"
+            >
               Home
             </Link>
           </li>
           <li>
-            <a href="#about" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="#about"
+              className="text-gray-700 transition-colors hover:text-primary-600"
+            >
               About Us
             </a>
           </li>
           <li>
-            <a href="#services" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="#services"
+              className="text-gray-700 transition-colors hover:text-primary-600"
+            >
               Services
             </a>
           </li>
           <li>
-            <a href="#experience" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="#experience"
+              className="text-gray-700 transition-colors hover:text-primary-600"
+            >
               Experience
             </a>
           </li>
           <li>
-            <a href="#contact" className="text-gray-700 hover:text-gray-900">
+            <a
+              href="#contact"
+              className="text-gray-700 transition-colors hover:text-primary-600"
+            >
               Contact
             </a>
           </li>

@@ -15,7 +15,9 @@ const ProjectExperienceSection = (props: IProjectExperienceSectionProps) => (
     <div className="absolute inset-0 bg-gray-900/75" />
     <Section title={props.title} yPadding="py-20">
       <div className="relative mx-auto max-w-4xl text-white">
-        <h3 className="mb-6 text-2xl font-bold">Commercial Construction</h3>
+        <div className="mb-4 inline-block border-l-4 border-primary-500 pl-4">
+          <h3 className="text-2xl font-bold">Commercial Construction</h3>
+        </div>
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
             With decades of experience, M.G. Construction Co. has established
