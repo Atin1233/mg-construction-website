@@ -59,7 +59,7 @@ const Index = () => (
           subtitle="Contact us today for a free consultation"
           button={
             <a href={`tel:${AppConfig.company.phone.replace(/[^0-9]/g, '')}`}>
-              <Button xl>Call {AppConfig.company.phone}</Button>
+              <Button xl>{`Call ${AppConfig.company.phone}`}</Button>
             </a>
           }
         />
