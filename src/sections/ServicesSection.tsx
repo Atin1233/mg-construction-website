@@ -7,6 +7,7 @@ type IServicesSectionProps = {
 type ServiceItem = {
   title: string;
   items: string[];
+  image: string;
 };
 
 const services: ServiceItem[] = [
@@ -21,36 +22,48 @@ const services: ServiceItem[] = [
       'Construction services',
       'Misc. concrete projects',
     ],
+    image: '/assets/images/concrete-work.jpg',
   },
   {
     title: 'Foundation Work',
     items: ['Concrete foundations', 'Block foundations'],
+    image: '/assets/images/foundation-work.jpg',
   },
 ];
 
 const ServicesSection = (props: IServicesSectionProps) => (
-  <Section title={props.title} yPadding="py-16">
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-      {services.map((service, index) => (
-        <div
-          key={index}
-          className="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition-shadow hover:shadow-lg"
-        >
-          <h3 className="mb-4 border-b-2 border-primary-500 pb-2 text-2xl font-bold text-gray-900">
-            {service.title}
-          </h3>
-          <ul className="space-y-2">
-            {service.items.map((item, itemIndex) => (
-              <li key={itemIndex} className="flex items-start text-gray-700">
-                <span className="mr-2 mt-1 text-primary-500">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </div>
-  </Section>
+  <div className="bg-gray-50">
+    <Section title={props.title} yPadding="py-20">
+      <div className="grid gap-0 md:grid-cols-2">
+        {services.map((service, index) => (
+          <div key={index} className="relative">
+            {/* Background Image with Overlay */}
+            <div
+              className="h-[500px] bg-cover bg-center"
+              style={{
+                backgroundImage: `url('${service.image}')`,
+              }}
+            >
+              <div className="absolute inset-0 bg-gray-900/60" />
+              <div className="absolute inset-0 flex flex-col justify-end p-8 text-white sm:p-12">
+                <h3 className="mb-6 text-3xl font-bold">{service.title}</h3>
+                <ul className="space-y-3 text-lg">
+                  {service.items.map((item, itemIndex) => (
+                    <li
+                      key={itemIndex}
+                      className="border-l-4 border-white pl-4"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Section>
+  </div>
 );
 
 export { ServicesSection };

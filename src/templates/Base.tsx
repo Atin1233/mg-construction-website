@@ -25,27 +25,27 @@ const Base = (props: IBaseTemplateProps) => (
           }
         >
           <li>
-            <Link href="/" className="hover:text-primary-600">
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
               Home
             </Link>
           </li>
           <li>
-            <a href="#about" className="hover:text-primary-600">
+            <a href="#about" className="text-gray-700 hover:text-gray-900">
               About Us
             </a>
           </li>
           <li>
-            <a href="#services" className="hover:text-primary-600">
+            <a href="#services" className="text-gray-700 hover:text-gray-900">
               Services
             </a>
           </li>
           <li>
-            <a href="#experience" className="hover:text-primary-600">
+            <a href="#experience" className="text-gray-700 hover:text-gray-900">
               Experience
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-primary-600">
+            <a href="#contact" className="text-gray-700 hover:text-gray-900">
               Contact
             </a>
           </li>
@@ -68,19 +68,25 @@ const Base = (props: IBaseTemplateProps) => (
         }
       >
         <li>
-          <Link href="/" className="transition-colors hover:text-primary-400">
+          <Link
+            href="/"
+            className="text-gray-300 transition-colors hover:text-white"
+          >
             Home
           </Link>
         </li>
         <li>
-          <a href="#about" className="transition-colors hover:text-primary-400">
+          <a
+            href="#about"
+            className="text-gray-300 transition-colors hover:text-white"
+          >
             About Us
           </a>
         </li>
         <li>
           <a
             href="#services"
-            className="transition-colors hover:text-primary-400"
+            className="text-gray-300 transition-colors hover:text-white"
           >
             Services
           </a>
@@ -88,7 +94,7 @@ const Base = (props: IBaseTemplateProps) => (
         <li>
           <a
             href="#experience"
-            className="transition-colors hover:text-primary-400"
+            className="text-gray-300 transition-colors hover:text-white"
           >
             Experience
           </a>
@@ -96,7 +102,7 @@ const Base = (props: IBaseTemplateProps) => (
         <li>
           <a
             href="#contact"
-            className="transition-colors hover:text-primary-400"
+            className="text-gray-300 transition-colors hover:text-white"
           >
             Contact
           </a>
