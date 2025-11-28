@@ -4,9 +4,12 @@ import { ConstructionHero } from '../hero/ConstructionHero';
 import { Meta } from '../layout/Meta';
 import { Section } from '../layout/Section';
 import { AboutSection } from '../sections/AboutSection';
+import { BlogSection } from '../sections/BlogSection';
 import { ProjectExperienceSection } from '../sections/ProjectExperienceSection';
 import { ServiceAreasSection } from '../sections/ServiceAreasSection';
 import { ServicesSection } from '../sections/ServicesSection';
+import { TestimonialsSection } from '../sections/TestimonialsSection';
+import { WhatMakesUsDifferentSection } from '../sections/WhatMakesUsDifferentSection';
 import { Base } from '../templates/Base';
 import { AppConfig } from '../utils/AppConfig';
 
@@ -48,10 +51,19 @@ const Index = () => (
         <ProjectExperienceSection title="Project Experience" />
       </div>
 
+      {/* What Makes Us Different Section */}
+      <WhatMakesUsDifferentSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
       {/* Service Areas Section */}
       <div id="contact">
         <ServiceAreasSection title="Service Areas" />
       </div>
+
+      {/* Blog Section */}
+      <BlogSection />
 
       {/* CTA Section */}
       <CTABanner
